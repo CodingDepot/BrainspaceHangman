@@ -1,6 +1,5 @@
 1)
-Print "Welcome to Hangman!"
-Print "Please input the secret Phrase"
+Print "Secret Phrase:"
 Read Input until you read enter
 2)
 change all lowercase chars into uppercase chars
