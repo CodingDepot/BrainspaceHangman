@@ -469,9 +469,75 @@ DISCARD_TOP_TWO_ITEMS
 RETURN
 -----------------END_OF_SUBROUTINE_DEFINITIONS-----------------
      	CREATE_SSST
+    PUSH_0
+			READ_TRIES 
+ DUPLICATE_TRIES
+	   	 JZ_SSTS
 
- 						JUMP_PRINT
+ 						CALL_DRAW_SUBROUTINE
+   		 PUSH_6
+	  	SUBTRACT_6_FROM_TRIES
+	   		JZ_SSTT
+
+    	 CREATE_SSTS
+
+ 	  	  CALL_PRINT_SUBROUTINE
+   	PUSH_1
+			READ_LENGTH	  	SUBTRACT_LENGTH_FROM_REVEALED_CHARACTERS
+	  	 	JZ_STST
+
+ 	     CALL_INPUT_SUBROUTINE
+
+ 	 	   CALL_COMPARISON_SUBROUTINE
+
+ 
+   	JUMP_SSST
+
+    		CREATE_SSTT
+   	 	 PUSH_'\n'
+   	    	PUSH_'!'
+   		  	 	PUSH_'e'
+   			  			PUSH_'s'
+   		 				PUSH_'o'
+   		 		  PUSH_'l'
+   	   		PUSH_SPACE
+   			 	 	PUSH_'u'
+   		 				PUSH_'o'
+   	 		  	PUSH_'Y'
+	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  PRINT_THE_PHRASE
 
 
+END_THE_PROGRAM
+   	 	CREATE_STST
+   	 	 PUSH_'\n'
+   	    	PUSH_'!'
+   		 			 PUSH_'n'
+   		 	  PUSH_'i'
+   	 	 			PUSH_'W'
+   	   		PUSH_SPACE
+   			 	 	PUSH_'u'
+   		 				PUSH_'o'
+   	 		  	PUSH_'Y'
+	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  PRINT_THE_PHRASE
 
-TODO:COMPARE_SUBROUTINES
+
+END_THE_PROGRAM
