@@ -27,4 +27,8 @@ The game ends once either the secret phrase is fully revealed or the gallows are
 
 ### Whitespace
 
-TBD
+The game flow is very similar to the Brainfuck version. Initially, **Player 1** specifies a secret phrase, with any characters which are non-ASCII letters staying revealed. The difference with this version is that _the secret phrase must end with a trailing space character_, otherwhise the program will not stop reading your input!
+
+After the secret phrase was specified, **Player 2** may try to guess individual letters. On a correct guess, this letter will be revealed, otherwise a new part of the gallow will be added. This input does not have to be space-terminated, and inputting multiple characters at once is possible.
+
+Again, the game ends once either the secret was fully guessed or after seven wrong guesses.
