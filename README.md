@@ -5,14 +5,6 @@ This goal of this repository is to provide one file containing an immplementatio
 However, the implementation will be done both in [Brainfuck](https://github.com/brain-lang/brainfuck) and [Whitespace](https://github.com/wspace), both contained within the same file (effectively creating a [polyglot](https://en.wikipedia.org/wiki/Polyglot_(computing))).
 Instructions how to run the code in this repository with existing interpreters or compilers can be found in the github repository of the respective language.
 
-The following table provides an overview of the branches contained within this project.
-
-| Branch name       | Language      | Purpose |
-| -------------     | :-------:     | :------: |
-| main              | **Both**      | Provide the raw source code without any form of explanation
-| brainfuck-comments| **Brainfuck** | Break down the different algorithms used in the brainfuck-implementation
-| whitespace-comments | **Whitespace** | Break down the differenc algorithms used in the whitespace-implementation
-
 ## Language-specific game instructions
 
 Since the two implementations are separate from each other, the final program also differs slightly depending on the language. Here is what you need to know in order to play a proper game of hangman:
