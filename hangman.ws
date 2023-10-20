@@ -188,7 +188,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
 			 		 JUMP_TSTTS_IF_NEG
    	     
 
-  	 			CREATE_TSSTS
+  	    CREATE_TSSSS
    		PUSH_3
     PUSH_0
 			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_THREE
@@ -199,7 +199,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
    	 PUSH_2
     PUSH_0
 			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_TWO
-			 	 	JUMP_TTSTS_IF_NEG
+				 	 JUMP_TTSTS_IF_NEG
    	     
 
   		   CREATE_TTSSS
@@ -290,7 +290,6 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
   	
   	
   	
-  	
   PRINT_ALL_57_CHARACTERS
 	RETURN
 
@@ -300,7 +299,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
  
 		 		JUMP_TSTTT
 
-  	 			CREATE_TTTST
+  			 	CREATE_TTTST
    	 				PUSH_"/"
 
  
@@ -310,7 +309,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
    	 			  PUSH_"\"
 
  
-	  	 JUMP_TSSTS
+	    JUMP_TSSSS
 
   	 	 	CREATE_TSTST
    					  PUSH_"|"
@@ -322,7 +321,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
    	 				PUSH_"/"
 
  
-				 JUMP_TTTTS
+		   JUMP_TTSSS
 
   	  		CREATE_TSSTT
    	  				PUSH_"O"
@@ -387,23 +386,26 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
 	  MULTIPLY_(L+1)*2
  	  	 COPY_INDEX_TO_TOP
 	  	SUBTRACT_INDEX-MAX
-	  	  	JUMP_TO_STSST_IF_ZERO
+	  			 JUMP_TO_STTTS_IF_ZERO
  	  	COPY_INDEX_TO_TOP
 			READ_SECRET_AT_POSITION 	  		COPY_GUESS_TO_TOP
 	  	SUBTRACT_GUESS_FROM_SECRET
 	  	 	 JUMP_STSTS_IF_SAME
- 	  		COPY_ERROR_COUNT_TO_TOP
-   	PUSH_ONE_TO_STACK
-	   ADD_ONE_TO_ERROR_COUNT 	  		COPY_GUESS
- 	  		COPY_INDEX
- 	  		COPY_LENGTH
- 	
-	  SLIDE_OLD_VALUES_OFF
-
+   	        PUSH_256
+ 
+	SWAP		 STORE   	       	PUSH_257
+ 
+	SWAP		 STORE   	      	 PUSH_258
+ 
+	SWAP		 STORE   	PUSH_ONE
+	   ADD   	      	 PUSH_258
+			READ   	       	PUSH_257
+			READ   	        PUSH_256
+			READ
  
  	 		JUMP_STSTT
 
-   	  	CREATE_STSST
+   	 	 CREATE_STSTS
  	  	COPY_INDEX
    	PUSH_ONE
 	   ADD_ONE_TO_INDEX 	  		COPY_GUESS
@@ -413,9 +415,9 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
 	SWAP_INDEX_AND_LENGTH   	 PUSH_TWO
 	   ADD_TWO_TO_INDEX
  
- 	  	JUMP_TO_LOOP_START
+ 	  	JUMP_STSST
 
-   	  	CREATE_STSST
+   			 CREATE_STTTS
  
 	 
 SWAP_AND_DISCARD_INDEX
@@ -478,11 +480,11 @@ DISCARD_TOP_TWO_ITEMS   	 	 PUSH_'\n'
 	   	 JZ_SSTS
 
  						CALL_DRAW_SUBROUTINE
-   		 PUSH_6
-	  	SUBTRACT_6_FROM_TRIES
-	   		JZ_SSTT
 
     	 CREATE_SSTS
+   			PUSH_7
+	  	SUBTRACT_7_FROM_TRIES
+	   		JZ_SSTT
 
  	  	  CALL_PRINT_SUBROUTINE
    	PUSH_1
@@ -500,10 +502,10 @@ DISCARD_TOP_TWO_ITEMS   	 	 PUSH_'\n'
    	 	 PUSH_'\n'
    	    	PUSH_'!'
    		  	 	PUSH_'e'
-   			  			PUSH_'s'
+   			  		PUSH_'s'
    		 				PUSH_'o'
    		 		  PUSH_'l'
-   	   		PUSH_SPACE
+   	     PUSH_SPACE
    			 	 	PUSH_'u'
    		 				PUSH_'o'
    	 		  	PUSH_'Y'
@@ -525,9 +527,9 @@ END_THE_PROGRAM
    	 	 PUSH_'\n'
    	    	PUSH_'!'
    		 			 PUSH_'n'
-   		 	  PUSH_'i'
+   		 	  	PUSH_'i'
    	 	 			PUSH_'W'
-   	   		PUSH_SPACE
+   	     PUSH_SPACE
    			 	 	PUSH_'u'
    		 				PUSH_'o'
    	 		  	PUSH_'Y'
