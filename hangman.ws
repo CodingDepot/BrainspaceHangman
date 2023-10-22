@@ -28,120 +28,120 @@
 	
      	     
 	
-  THIS_PRINTS_THE_INITIAL_PROMPT   	PUSH_ONE_TO_STACK
-    PUSH_ZERO_TO_STACK
-		 STORE_THE_ZERO_AT_HEAP_ADDRESS_ONE_TO_MARK_INPUT_LENGTH    PUSH_ZERO_TO_STACK
-    PUSH_ZERO_TO_STACK
-		 STORE_ZERO_AT_ZERO_TO_INIT_NUMBER_OF_GUESSES
-    LABEL_SPACESPACE_TO_MARK_INPUT_LOOP
-   	PUSH_ONE_TO_STACK
+     	
+    
+		     
+    
+		 
+    
+   	
  
- DUPLICATE_ADDRESS_OF_LENGTH			RETRIEVE_INPUT_LENGTH   	PUSH_ONE_TO_STACK
-	   ADD_ONE_TO_INPUT_LENGTH 
- DUPLICATE_INCREMENTED_ADDRESS   	 PUSH_TWO_TO_STACK
-	  MULTIPLY_N+1_WITH_TWO
- 
- DUPLICATE_ADDRESS_AT_TOP 
- DUPLICATE_AGAIN	
-	 READ_INPUT_AND_STORE_AT_ADDRESS			RETRIEVE_INPUT_FROM_HEAP   	     
-PUSH_SPACE_TO_STACK	  	SUBTRACT_SPACE_FROM_INPUT
-	  	
-JUMP_TO_SPACETAB_IF_ZERO   	PUSH_ONE_TO_STACK
-	   ADD_ONE_TO_ADDRESS   	 					PUSH_UNDERSCORE_TO_STACK
-		 STORE_UNDERSCORE_ONE_AFTER_INPUT		 STORE_NEW_LENGTH_OF_INPUT
+ 			   	
+	    
+    	 
+	  
  
   
-JUMP_TO_SPACESPACE
+ 	
+	 			   	     
+	  	
+	  	
    	
-LABEL_SPACETAB_TO_MARK_END_OF_INPUT_ROUTINE 
+	      	 					
+		 		 
+ 
+  
 
+   	
  
 
  
 
-CLEAR_STACK   	
-PUSH_ONE_TO_STACK			RETRIEVE_INPUT_LENGTH   	
-PUSH_ONE_TO_STACK	   ADD_ONE_TO_INPUT_LENGTH   	 
-PUSH_TWO_TO_STACK	  
-MULTIPLY    
-PUSH_ZERO_TO_STACK		 STORE_ZERO_AT_PREVIOUS_SPACE_INPUT
+ 
+
+   	
+			   	
+	      	 
+	  
+    
+		 
  
 	 	
 
-  			CREATE_LABEL_TABTABTAB_FOR_TO_UPPER_SUBROUTINE
+  			
  
- DUPLICATE_INPUT
  
-	  JUMP_OVER_SUBROUTINE_END
+ 
+	  
 
-  		 CREATE_LABEL_TABTABSPACE_FOR_SUBROUTINE_END
+  		 
 
-	END_SUBROUTINE
+	
 
-  	  CREATE_LABEL_TABSPACESPACE_TO_JUMP_OVER_END
-   		    	PUSH_'a'_TO_STACK
-	  	SUBTRACT_'a'_FROM_INPUT
-				 JUMP_TO_END_IF_NEGATIVE
+  	  
+   		    	
+	  	
+				 
  
- DUPLICATE_INPUT   				 	 PUSH_'z'_TO_STACK
+    				 	 
  
-	SWAP_INPUT_AND_'z'	  	SUBTRACT_INPUT_FROM_'z'
-				 JUMP_TO_END_IF_NEGATIVE
-  		     PUSH_-32_TO_STACK
-	   SUBTRACT_THE_32_FROM_INPUT
+		  	
+				 
+  		     
+	   
  
-		 JUMP_TO_END
+		 
 
-  	 	CREATE_LABEL_TABSPACETAB_TO_JUMP_OVER_SUBROUTINE
-   	PUSH_ONE_TO_STACK
-			GET_INPUT_LENGTH   	 PUSH_TWO_TO_STACK
+  	 	
+   	
+			   	 
 
-  	 CREATE_LABEL_TABSPACE
- 	  	COPY_INPUT_LENGTH
-   	 PUSH_TWO_TO_STACK
-	  MULTIPLY
- 	  	COPY_INDEX
-	  	SUBTRACT
-		    JUMP_TO_SSSS_IF_NEGATIVE
+  	 
+ 	  	
+   	 
+	  
+ 	  	
+	  	
+		    
  
- DUPLICATE_CURRENT_INDEX			GET_INPUT_AT_INDEX
- 				CALL_TO_UPPER
+ 			
+ 				
  
- DUPLICATE_MODIFIED_INPUT 	  	 COPY_INDEX_TO_TOP
+  	  	 
  
-	SWAP_INDEX_AND_NEW_INPUT		 OVERRIDE_OLD_INPUT 
- DUPLICATE_MODIFIED_INPUT   	 		 		PUSH_91_TO_STACK
+			  
+    	 		 		
  
-	SWAP_91_AND_INPUT	  	SUBTRACT
-		 	 JUMP_TO_SPACETABSPACE_IF_NEGATIVE
+		  	
+		 	 
  
-    	      PUSH_64_TO_STACK
-	  	SUBTRACT
-		 	 JUMP_TO_SPACETABSPACE_IF_NEGATIVE
+    	      
+	  	
+		 	 
 
-   		CREATE_LABEL_SPACETABTAB
+   		
  
 
-DROP_INPUT   	 PUSH_TWO_ON_STACK
-	   ADD_TWO_TO_INDEX
+   	 
+	   
  
-	 JUMP_TO_TABSPACE
+	 
 
-   	 CREATE_LABEL_SPACETABSPACE
- 	  	COPY_INDEX
-   	PUSH_ONE_TO_STACK
-	   ADD_ONE_TO_INDEX 
-	SWAP_INDEX_AND_NEW_INPUT		 STORE_INPUT_AT_UNDERSCORE   	PUSH_ONE_AS_DUMMY
-
- 
- 		JUMP_TO_SPACETABTAB
-
-      CREATE_LABEL_SSSS
+   	 
+ 	  	
+   	
+	    
+			    	
 
  
-   	JUMP_TO_SSST
------------------START_OF_SUBROUTINE_DEFINITIONS-----------------
-  					CREATE_LABEL_TTTTT_FOR_PRINTING
+ 		
+
+      
+
+ 
+   	
+
+  					
    	 	 
    				 	
    				 	
@@ -149,7 +149,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
    				 	
    				 	
    				 	
-   				 	BOTTOM_ROW
+   				 	
    	 	 
    					  
    	     
@@ -158,74 +158,74 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
    	     
    	     
    	     
-   	 	 SECOND_ROW
-   					  
-   	     
-   	     
-   		 PUSH_6
-    PUSH_0
-			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_SIX
-			 			JUMP_TSTTT_IF_NEG
-   	     
-
-  		 		CREATE_TTSTT
-   	     
-   	 	PUSH_5
-    PUSH_0
-			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_FIVE
-					 	JUMP_TTTST_IF_NEG
-   	     
-
-  				 CREATE_TTTTS
-   	     THIRD_ROW
    	 	 
    					  
    	     
    	     
-   	  PUSH_4
-    PUSH_0
-			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_FOUR
-			 		 JUMP_TSTTS_IF_NEG
+   		 
+    
+				  	
+			 			
    	     
 
-  	    CREATE_TSSSS
-   		PUSH_3
-    PUSH_0
-			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_THREE
-			 	 	JUMP_TSTST_IF_NEG
+  		 		
+   	     
+   	 	
+    
+				  	
+					 	
    	     
 
-  	   	CREATE_TSSST
-   	 PUSH_2
-    PUSH_0
-			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_TWO
-				 	 JUMP_TTSTS_IF_NEG
+  				 
    	     
-
-  		   CREATE_TTSSS
-   	     FOURTH_ROW
    	 	 
    					  
    	     
    	     
-   	     
-   	PUSH_1
-    PUSH_0
-			RETRIEVE_TRIES	  	SUBTRACT_TRIES_FROM_ONE
-			  		JUMP_TSSTT_IF_NEG
+   	  
+    
+				  	
+			 		 
    	     
 
-  	  	 CREATE_TSSTS
+  	    
+   		
+    
+				  	
+			 	 	
    	     
-   	     FIFTH_ROW
+
+  	   	
+   	 
+    
+				  	
+				 	 
+   	     
+
+  		   
+   	     
    	 	 
    					  
    	     
    	     
    	     
+   	
+    
+				  	
+			  		
+   	     
+
+  	  	 
+   	     
+   	     
+   	 	 
    					  
    	     
-   	     SIXTH_ROW
+   	     
+   	     
+   					  
+   	     
+   	     
    	 	 
    	 	 		
    	 		 	
@@ -233,7 +233,7 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
    	 		 	
    	 	 		
    	     
-   	     LAST_ROW
+   	     
    	 	 
 	
   	
@@ -292,61 +292,61 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
   	
   	
   	
-  PRINT_ALL_57_CHARACTERS
-	RETURN
+  
+	
 
-  	 			CREATE_TSTTT
-   	 			  PUSH_"\"
-
- 
-		 		JUMP_TSTTT
-
-  			 	CREATE_TTTST
-   	 				PUSH_"/"
+  	 			
+   	 			  
 
  
-				 JUMP_TTTTS
+		 		
 
-  	 		 CREATE_TSTTS
-   	 			  PUSH_"\"
-
- 
-	    JUMP_TSSSS
-
-  	 	 	CREATE_TSTST
-   					  PUSH_"|"
+  			 	
+   	 				
 
  
-	   	JUMP_TSSST
+				 
 
-  		 	 CREATE_TTSTS
-   	 				PUSH_"/"
-
- 
-		   JUMP_TTSSS
-
-  	  		CREATE_TSSTT
-   	  				PUSH_"O"
+  	 		 
+   	 			  
 
  
-	  	 JUMP_TSSTS
+	    
 
-       CREATE_SSSSS
+  	 	 	
+   					  
 
-       CREATE_SSSSS
-   	     PUSH_'space'
-   			 	 PUSH_':'
-   			  		PUSH_'s'
-   			  		PUSH_'s'
-   		  	 	PUSH_'e'
-   			 	 	PUSH_'u'
-   	   			PUSH_'G'
-   	     PUSH_'space'
-   			 	  PUSH_'t'
-   			 	 	PUSH_'u'
-   			    PUSH_'p'
-   		 			 PUSH_'n'
-   	  	  	PUSH_'I'
+ 
+	   	
+
+  		 	 
+   	 				
+
+ 
+		   
+
+  	  		
+   	  				
+
+ 
+	  	 
+
+       
+
+       
+   	     
+   			 	 
+   			  		
+   			  		
+   		  	 	
+   			 	 	
+   	   			
+   	     
+   			 	  
+   			 	 	
+   			    
+   		 			 
+   	  	  	
 	
   	
   	
@@ -360,181 +360,157 @@ DROP_INPUT   	 PUSH_TWO_ON_STACK
   	
   	
   	
-  PRINT_ALL   	PUSH_ONE
-			GET_SECRET_LENGTH   	PUSH_ONE
-	   ADD_ONE_TO_LENGTH   	 PUSH_TWO
-	  MULTIPLY_(L+1)*2
+     	
+			   	
+	      	 
+	  
 	
-	 READ_GUESS_AND_STORE_AFTER_GUESSES
-	RETURN
+	 
+	
 
-   	   CREATE_STSSS
-    PUSH_ZERO
-   	PUSH_ONE
-			GET_INPUT_LENGTH 
- DUPLICATE_L   	PUSH_ONE
-	   ADD_ONE_TO_L   	 PUSH_TWO
-	  MULTIPLY_(L+1)*2
-			READ_GUESS
- 				CALL_TO_UPPER
+   	   
+    
+   	
+			 
+    	
+	      	 
+	  
+			
+ 				
  
-	SWAP_GUESS_AND_LENGTH   	 PUSH_TWO
+	   	 
 
-   	  	CREATE_STSST_FOR_LENGTH_COMPARISON
- 
-	SWAP_INDEX_AND_LENGTH 
- DUPLICATE_LENGTH   	PUSH_ONE
-	   ADD_ONE_TO_LENGTH   	 PUSH_TWO
-	  MULTIPLY_(L+1)*2
- 	  	 COPY_INDEX_TO_TOP
-	  	SUBTRACT_INDEX-MAX
-	  			 JUMP_TO_STTTS_IF_ZERO
- 	  	COPY_INDEX_TO_TOP
-			READ_SECRET_AT_POSITION 	  		COPY_GUESS_TO_TOP
-	  	SUBTRACT_GUESS_FROM_SECRET
-	  	 	 JUMP_STSTS_IF_SAME
-   	        PUSH_256
- 
-	SWAP		 STORE   	       	PUSH_257
- 
-	SWAP		 STORE   	      	 PUSH_258
- 
-	SWAP		 STORE   	PUSH_ONE
-	   ADD   	      	 PUSH_258
-			READ   	       	PUSH_257
-			READ   	        PUSH_256
-			READ
- 
- 	 		JUMP_STSTT
-
-   	 	 CREATE_STSTS
- 	  	COPY_INDEX
-   	PUSH_ONE
-	   ADD_ONE_TO_INDEX 	  		COPY_GUESS
-		 STORE_GUESS_IN_(I+1)
-   	 		CREATE_STSTT
- 
-	SWAP_INDEX_AND_LENGTH   	 PUSH_TWO
-	   ADD_TWO_TO_INDEX
- 
- 	  	JUMP_STSST
-
-   			 CREATE_STTTS
+   	  	
  
 	 
-SWAP_AND_DISCARD_INDEX
+    	
+	      	 
+	  
+ 	  	 
+	  	
+	  			 
+ 	  	
+			 	  		
+	  	
+	  	 	 
+   	        
+ 
+			    	       	
+ 
+			    	      	 
+ 
+			    	
+	      	      	 
+			   	       	
+			   	        
+			
+ 
+ 	 		
+
+   	 	 
+ 	  	
+   	
+	    	  		
+		 
+   	 		
+ 
+	   	 
+	   
+ 
+ 	  	
+
+   			 
  
 	 
-SWAP_AND_DISCARD_GUESS
-	  	SUBTRACT_ERRORS_FROM_LENGTH
-	  		  JUMP_STTSS_IF_SAME
-
-   		 	CREATE_STTST
-
-	RETURN
-
-   		  CREATE_STTSS
-    PUSH_ZERO
- 
- DUPLICATE_THE_ZERO			GET_ERRORS_FROM_HEAP   	PUSH_ONE
-	   ADD_ONE_TO_ERRORS		 STORE_NEW_VALUE_IN_HEAP
- 
- 		 	JUMP_STTST
-
-    	  CREATE_SSTSS
-    PUSH_0
-   		PUSH_3
-
-    		 CREATE_SSTTS
- 
- DUPLICATE_INDEX			READ_CHARACTER_AT_INDEX 
- DUPLICATE_CHARACTER
-	   			JZ_SSTTT
- 
- DUPLICATE_AGAIN	
-  PRINT_CHARACTER   	 					PUSH_95
-	  	SUBTRACT_95_FROM_CHAR
-	   	 	JZ_SSTST
- 
-	SWAP_INDEX_AND_HITS   	PUSH_ONE
-	   ADD_ON_TO_HITS 
-	SWAP_BACK
-    	 	CREATE_SSTST
-   	 PUSH_TWO
-	   ADD_TWO_TO_INDEX
- 
-  		 JMP_SSTTS
-
-    			CREATE_SSTTT
- 
 
  
+	 
 
-DISCARD_TOP_TWO_ITEMS   	 	 PUSH_'\n'
+	  	
+	  		  
+
+   		 	
+
 	
-  PRINT_NEWLINE
-	RETURN
------------------END_OF_SUBROUTINE_DEFINITIONS-----------------
-     	CREATE_SSST
-    PUSH_0
-			READ_TRIES 
- DUPLICATE_TRIES
-	   	 JZ_SSTS
 
- 						CALL_DRAW_SUBROUTINE
+   		  
+    
+ 
+ 			   	
+	   		 
+ 
+ 		 	
 
-    	 CREATE_SSTS
-   			PUSH_7
-	  	SUBTRACT_7_FROM_TRIES
-	   		JZ_SSTT
+    	  
+    
+   		
 
- 	  	  CALL_PRINT_SUBROUTINE
-   	PUSH_1
-			READ_LENGTH	  	SUBTRACT_LENGTH_FROM_REVEALED_CHARACTERS
-	  	 	JZ_STST
+    		 
+ 
+ 			 
+ 
+	   			
+ 
+ 	
+     	 					
+	  	
+	   	 	
+ 
+	   	
+	    
+	
+    	 	
+   	 
+	   
+ 
+  		 
 
- 	     CALL_INPUT_SUBROUTINE
-
- 	 	   CALL_COMPARISON_SUBROUTINE
+    			
+ 
 
  
-   	JUMP_SSST
 
-    		CREATE_SSTT
-   	 	 PUSH_'\n'
-   	    	PUSH_'!'
-   		  	 	PUSH_'e'
-   			  		PUSH_'s'
-   		 				PUSH_'o'
-   		 		  PUSH_'l'
-   	     PUSH_SPACE
-   			 	 	PUSH_'u'
-   		 				PUSH_'o'
-   	 		  	PUSH_'Y'
+   	 	 
 	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  	
-  PRINT_THE_PHRASE
+  
+	
 
+     	
+    
+			 
+ 
+	   	 
 
-END_THE_PROGRAM
-   	 	CREATE_STST
-   	 	 PUSH_'\n'
-   	    	PUSH_'!'
-   		 			 PUSH_'n'
-   		 	  	PUSH_'i'
-   	 	 			PUSH_'W'
-   	     PUSH_SPACE
-   			 	 	PUSH_'u'
-   		 				PUSH_'o'
-   	 		  	PUSH_'Y'
+ 						
+
+    	 
+   			
+	  	
+	   		
+
+ 	  	  
+   	
+				  	
+	  	 	
+
+ 	     
+
+ 	 	   
+
+ 
+   	
+
+    		
+   	 	 
+   	    	
+   		  	 	
+   			  		
+   		 				
+   		 		  
+   	     
+   			 	 	
+   		 				
+   	 		  	
 	
   	
   	
@@ -544,7 +520,30 @@ END_THE_PROGRAM
   	
   	
   	
-  PRINT_THE_PHRASE
+  	
+  
 
 
-END_THE_PROGRAM
+
+   	 	
+   	 	 
+   	    	
+   		 			 
+   		 	  	
+   	 	 			
+   	     
+   			 	 	
+   		 				
+   	 		  	
+	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  	
+  
+
+
