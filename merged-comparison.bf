@@ -15,14 +15,13 @@ CONVERTED TO THE FOLLOWING LAYOUT:
 >>>> ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++
 > ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ ++++++++++ +++++
 
-PRINT: "Input guess: "
-
->
-++++++++++
+PRINT: "Input guess:\n"
+> ++++++++++ .
 [
     - > +++++++ <
 ]
 > +++ . <                   I
+
 ++++++++++
 [
     - > ++++ <
@@ -53,10 +52,11 @@ PRINT: "Input guess: "
 ]
 > ++++ . [-] <                   Space
 
->
 WE STORE THE USER INPUT IN THIS CELL AND CONVERT IT TO UPPERCASE
-input:t
-,
+NEW: IF THE INPUT WAS A NEWLINE WE READ AGAIN!
+input:i
++ > + < [[> , ---------- [< -] > [>] <<] + > ---------------------- [< -] > [>] << ] > ++++++++++++++++++++++++++++++++
+#
 [> + > + << -]
 >>> +++++++++++++++++++++++++++
 < ------------------------------------------------------------------------------------------------
@@ -83,8 +83,9 @@ START BY COPYING INPUT TO THE TWO CELLS TO THE RIGHT! WE NEED TO REGENERATE THEM
 [- > + > + > + <<<]
 >>> [- <<< + >>>]
 <<<
-FIRST: STEP FIVE LEFT AND THEN FOUR TO THE LEFT UNTIL WE FIND A FREE CELL (HAS NOT BEEN COPIED/EVALUATED YET)
-<<<<< [<<<<]
+FIRST: STEP FIVE LEFT AND THEN FIVE MORE TO THE LEFT UNTIL WE FIND A FREE CELL (HAS NOT BEEN COPIED/EVALUATED YET)
+<<<<< [<<<<<]
+#
 NOW IF THE RIGHT VALUE IS NOT ZERO WE NEED TO COPY AND EVALUATE!
 > 
 [

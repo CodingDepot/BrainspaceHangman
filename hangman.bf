@@ -45,14 +45,14 @@ PRINTS "Secret Phrase:\n"
 END OF PRINT STATEMENT; RESET CELLS TO ZERO
 [ - ]
 >>>>>>> +
-FOLLOWING READS INPUT FROM USER UNTIL A SPACE WAS READ;
+FOLLOWING READS INPUT FROM USER UNTIL A NEWLINE WAS READ;
 IT CONVERTS THE CHARACTER TO AN UPPERCASE CHARACTER AND INITIALIZES A CELL CONTAINING THE "PUBLIC" VALUE WITH AN UNDERSCORE
 [
     << ,
-    IF SPACE SKIP
-    --------------------------------
+    IF NEWLINE SKIP
+    ----------
     [
-        ++++++++++++++++++++++++++++++++
+        +++++++++++
         [> + > + << -]
         >>> ++++++++++ ++++++++++ ++++++
         ADD 26 INTO THE NEXT CELL
@@ -60,7 +60,7 @@ IT CONVERTS THE CHARACTER TO AN UPPERCASE CHARACTER AND INITIALIZES A CELL CONTA
         < ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --------
         THIS LOOP WORKS AS FOLLOWS: WE SUB FROM THE COUNTER AND THEN FROM THE SECOND COPY
         WHEN THE COUNTER IS EMPTY FIRST: THE LOOP FINALLY ADDS 32 TO THE LEFT COPY BEFORE SUBTRACTING IT IN THE END
-        WHEN THE RIGHT COPY IS EMptY FIRST: THE LOOP DOES NOT CHANGE THE LEFT COPY; IN THE END WE SUBTRACT 32
+        WHEN THE RIGHT COPY IS EMPTY FIRST: THE LOOP DOES NOT CHANGE THE LEFT COPY; IN THE END WE SUBTRACT 32
         [
             REMOVE ONE FROM THE 26_COUNTER
             > -
@@ -79,7 +79,7 @@ IT CONVERTS THE CHARACTER TO AN UPPERCASE CHARACTER AND INITIALIZES A CELL CONTA
         ] 
         > [-]
         <
-        < ---------- ---------- ---------- --
+        < ---------- ---------- ---------- ---
         ADD UNDERSCORE NEXT TO CELL
         TODO:
         SIMILAR TO TO_UPPER CODE:
@@ -134,6 +134,7 @@ IT CONVERTS THE CHARACTER TO AN UPPERCASE CHARACTER AND INITIALIZES A CELL CONTA
 ]
 > - <<
 #
+
 HERE WE INITIALIZE THE ATTEMPT COUNTER TO 7 AND STORE THE ASCII VALUES NEEDED FOR DRAWING
 >>>>>>> +++++++
 >> ++++++++++++++++++++++++++++++++
@@ -152,9 +153,8 @@ HERE WE INITIALIZE THE ATTEMPT COUNTER TO 7 AND STORE THE ASCII VALUES NEEDED FO
 _________________________________________________________________________________________________________
 [
     [-]
-    PRINT: "Input guess: "
-    >>
-    ++++++++++
+    PRINT: "Input guess:\n"
+	>> ++++++++++ .
     [
         - > +++++++ <
     ]
@@ -184,14 +184,14 @@ ________________________________________________________________________________
     > +++ . <                   :
 
     ++++++++++
-    [
-        - > --- <
-    ]
-    > ++++ . [-] <                   Space
-    <<<
-
+	[
+    	- > ----- <
+	]
+	> ++ . [-] < \n
+	<<<<
     WE STORE THE USER INPUT IN THIS CELL AND CONVERT IT TO UPPERCASE
-    ,
+	NEW: IF THE INPUT WAS A NEWLINE OR SPACE WE READ AGAIN!
+	+ > + < [[> , ---------- [< -] > [>] <<] + > ---------------------- [< -] > [>] << ] > ++++++++++++++++++++++++++++++++
     [> + > + << -]
     >>> +++++++++++++++++++++++++++
     < ------------------------------------------------------------------------------------------------
@@ -213,8 +213,8 @@ ________________________________________________________________________________
     [- > + > + > + <<<]
     >>> [- <<< + >>>]
     <<<
-    FIRST: STEP FIVE LEFT AND THEN FOUR TO THE LEFT UNTIL WE FIND A FREE CELL (HAS NOT BEEN COPIED/EVALUATED YET)
-    <<<<< [<<<<]
+    FIRST: STEP FIVE LEFT AND THEN FIVE MORE TO THE LEFT UNTIL WE FIND A FREE CELL (HAS NOT BEEN COPIED/EVALUATED YET)
+    <<<<< [<<<<<]
     NOW IF THE RIGHT VALUE IS NOT ZERO WE NEED TO COPY AND EVALUATE!
     > 
     [
@@ -441,3 +441,5 @@ WE CHECK THE FLAG TO DETERMINE WHAT TO PRINT:
 "!\n"
 ++++++++++ ++++++++++ ++++++++++ +++ .
 --- ---------- ---------- .
+TODO: BRAINFUCK INTERPRETER DOES INDEED READ THE NEWLINE CHARACTER AS AN INPUT!!! ACCOUNT FOR THIS!!!
+TODO: FIX OR FIND ALTERNATIVE INTERPRETER!!!

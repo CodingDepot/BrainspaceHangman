@@ -44,23 +44,24 @@ FOLLOWING READS INPUT FROM USER UNTIL A SPACE WAS READ;
 TODO: MAKE IT SO ONLY LOWERCASE CHARACTERS ARE MODIFIED AND SYMBOLS ARE COPIED INSTEAD OF THE UNDERSCORE!
 IT CONVERTS THE CHARACTER TO AN UPPERCASE CHARACTER AND INITIALIZES A CELL CONTAINING THE "PUBLIC" VALUE WITH AN UNDERSCORE
 
-input:Kha'Zix 
+input:Kha'Zix
 timeout:5000
 debug:60
 [
     << ,
-    IF SPACE SKIP
-    --------------------------------
+    IF NEWLINE SKIP
+	#
+    ----------
     [
-        ++++++++++++++++++++++++++++++++
+        ++++++++++
         [> + > + << -]
         >>> ++++++++++ ++++++++++ ++++++
         ADD 26 INTO THE NEXT CELL
         SUB 97 FROM THE SECOND COPY (a)
         < ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --------
         THIS LOOP WORKS AS FOLLOWS: WE SUB FROM THE COUNTER AND THEN FROM THE SECOND COPY
-        WHEN THE COUNTER IS EMPTY FIRST: THE LOOP FINALLY ADDS 32 TO THE LEFT COPY BEFORE SUBTRACTING IT IN THE END
-        WHEN THE RIGHT COPY IS EMptY FIRST: THE LOOP DOES NOT CHANGE THE LEFT COPY; IN THE END WE SUBTRACT 32
+        WHEN THE COUNTER IS EMPTY FIRST: THE LOOP FINALLY ADDS 10 TO THE LEFT COPY BEFORE SUBTRACTING IT IN THE END
+        WHEN THE RIGHT COPY IS EMPTY FIRST: THE LOOP DOES NOT CHANGE THE LEFT COPY; IN THE END WE SUBTRACT 10
         [
             REMOVE ONE FROM THE 26_COUNTER
             > -
@@ -81,7 +82,6 @@ debug:60
         <
         < ---------- ---------- ---------- --
         ADD UNDERSCORE NEXT TO CELL
-        TODO:
         SIMILAR TO TO_UPPER CODE:
         ONLY ADD UNDERSCORE IF THE VALUE IS AN UPPERCASE NUMBER
         ___________________________________________
@@ -127,7 +127,6 @@ debug:60
             < [- > + <]
         ]
         < [<] > [<]
-        #
         >>>>>>> + <
         ____________________________________________
     ]
