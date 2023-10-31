@@ -1,6 +1,3 @@
-An attempt to combine a valid [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) program with a valid [Whitespace](https://en.wikipedia.org/wiki/Whitespace_%28programming_language%29) program which both implement a form of the game "Hangman".
-
-This is still WIP and will be updated occasionally, the first stage is creating the corresponding Brainfuck program.
 # Brainspace Hangman
 
 This goal of this repository is to provide one file containing an immplementation of the popular game [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)).
