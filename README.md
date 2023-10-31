@@ -1,6 +1,6 @@
 # Brainspace Hangman
 
-The goal of this repository is to provide one file containing an immplementation of the popular game [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)).
+The goal of this repository is to provide one file containing an implementation of the popular game [Hangman](https://en.wikipedia.org/wiki/Hangman_(game)).
 
 However, the implementation will be done in [Brainfuck](https://github.com/brain-lang/brainfuck) and [Whitespace](https://github.com/wspace), both contained within the same file (effectively creating a [polyglot](https://en.wikipedia.org/wiki/Polyglot_(computing))).
 Instructions how to run the code in this repository with existing interpreters or compilers can be found in the github repository of the respective language. The following language sections also reference the interpreters used while developing.
