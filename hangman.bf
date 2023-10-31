@@ -56,7 +56,7 @@ IT CONVERTS THE CHARACTER TO AN UPPERCASE CHARACTER AND INITIALIZES A CELL CONTA
         [> + > + << -]
         >>> ++++++++++ ++++++++++ ++++++
         ADD 26 INTO THE NEXT CELL
-        SUB 97 FROM THE SECOND COPY (a)
+        SUB 98 FROM THE SECOND COPY (a)
         < ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- ---------- --------
         THIS LOOP WORKS AS FOLLOWS: WE SUB FROM THE COUNTER AND THEN FROM THE SECOND COPY
         WHEN THE COUNTER IS EMPTY FIRST: THE LOOP FINALLY ADDS 32 TO THE LEFT COPY BEFORE SUBTRACTING IT IN THE END
